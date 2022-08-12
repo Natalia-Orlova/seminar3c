@@ -17,4 +17,11 @@ else if (x < 0 && y < 0) Console.WriteLine("Точка находится в т�
 else if (x > 0 && y < 0) Console.WriteLine("Точка находится в четвертой четверти");
 else Console.WriteLine("Введены некорректные координаты");
 
+// int quarter = 0;
+// if (x > 0 && y > 0) quarter = 1;
+// else if (x < 0 && y > 0) quarter = 2;
+// else if (x < 0 && y < 0) quarter = 3;
+// else if (x > 0 && y < 0) quarter = 4;
 
+// if (x != 0 && y !=0) Console.WriteLine($"{quarter} четверть");
+// else Console.WriteLine("Введены некорректные координаты");
