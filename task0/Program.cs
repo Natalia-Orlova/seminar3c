@@ -23,10 +23,10 @@ int y = Convert.ToInt32(Console.ReadLine());
 string GetQuarter(int xc, int yc)
 {
     if (xc > 0 && yc > 0) return "Точка находится в первой четверти";
-    else if (xc < 0 && yc > 0) return "Точка находится во второй четверти";
-    else if (xc < 0 && yc < 0) return "Точка находится в третьей четверти";
-    else if (xc > 0 && yc < 0) return "Точка находится в четвертой четверти";
-    else return "Введены некорректные координаты";
+    if (xc < 0 && yc > 0) return "Точка находится во второй четверти";
+    if (xc < 0 && yc < 0) return "Точка находится в третьей четверти";
+    if (xc > 0 && yc < 0) return "Точка находится в четвертой четверти";
+    return "Введены некорректные координаты";
 }
 
 string result = GetQuarter(x, y);
